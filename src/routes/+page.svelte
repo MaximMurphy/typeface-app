@@ -1,2 +1,12 @@
+<script>
+	import Footer from '../components/layout/Footer.svelte';
+</script>
+
 <h1>typeface-app</h1>
-<p>Made by Maxim Murphy and Joey Warnkin</p>
+<Footer />
+
+<style>
+	h1 {
+		color: red;
+	}
+</style>
