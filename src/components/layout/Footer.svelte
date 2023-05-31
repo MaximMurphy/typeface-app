@@ -9,6 +9,5 @@
 	p {
 		position: absolute;
 		bottom: 0;
-		color: maroon;
 	}
 </style>
