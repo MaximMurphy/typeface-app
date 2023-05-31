@@ -2,8 +2,7 @@
 	let text = '';
 </script>
 
-<form action=""><input id="input" placeholder="Enter text here.." bind:value={text} /></form>
-{@html text}
+<form action=""><input id="input" placeholder="Enter text here..." bind:value={text} /></form>
 
 <style>
 	form {
@@ -12,12 +11,22 @@
 		align-items: center;
 	}
 	input {
-		width: 30%;
-		height: 100px;
+		width: fit-content;
+		height: fit-content;
 		text-align: start;
-		margin: 50px 0px 50px 0px;
-		padding: 5px;
-		font-size: 2em;
+		padding: 20px;
+		font-size: 1.25em;
+		border: solid;
+		border-radius: 10px;
+		border-color: whitesmoke;
+		border-width: thin;
+	}
+	/* For desktop: */
+	@media only screen and (min-width: 768px) {
+		input {
+			width: 100%;
+			font-size: 2em;
+		}
 	}
 	input:focus {
 		outline: none;
