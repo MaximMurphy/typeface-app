@@ -1,14 +1,18 @@
-<div class="footer"><p>created by maxim murphy and joey warnkin</p></div>
+<div id="footer">
+	<p>copyright 2023</p>
+	<p>created by maxim murphy and joey warnkin</p>
+</div>
 
 <style>
-	.footer {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	p {
-		position: absolute;
+	#footer {
+		position: fixed;
 		bottom: 0;
+		width: 95%;
+		height: 50px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 5px;
 		font-size: 0.8em;
 	}
 	/* For desktop: */

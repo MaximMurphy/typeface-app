@@ -1,10 +1,31 @@
 <script>
+	// @ts-nocheck
+
 	let text = '';
+	const handleInput = () => {
+		document.querySelector('#text').style.display = 'none';
+		document.querySelector('#download').style.display = 'none';
+	};
 </script>
 
-<form action=""><input id="input" placeholder="Enter text here..." bind:value={text} /></form>
+<form action="">
+	<input id="input" placeholder="Enter text here..." bind:value={text} on:input={handleInput} />
+</form>
+
+<p id="text">{text}</p>
 
 <style>
+	#text {
+		display: none;
+		margin-left: auto;
+		margin-right: auto;
+		width: 500px;
+		height: 500px;
+		flex-direction: column;
+		font-weight: bold;
+		text-align: center;
+		font-size: 7em;
+	}
 	form {
 		display: flex;
 		flex-direction: column;

@@ -4,20 +4,12 @@
 	import html2canvas from 'html2canvas';
 
 	let handleClick = () => {
-		console.log('hello');
+		const newElement = document.querySelector('#text');
+		const containerElement = document.querySelector('#container');
 
-		const element = document.querySelector('#everything');
-		const scale = 2; // Increase scale value for higher quality
-
-		setTimeout(() => {
-			html2canvas(element, { scale }).then((canvas) => {
-				const dataURL = canvas.toDataURL('image/png');
-				const link = document.createElement('a');
-				link.href = dataURL;
-				link.download = 'screenshot.png';
-				link.click();
-			});
-		}, 500);
+		document.querySelector('#text').style.display = 'block';
+		document.querySelector('#download').style.display = 'flex';
+		containerElement.parentNode.insertBefore(newElement, containerElement.nextSibling);
 	};
 </script>
 
@@ -34,6 +26,7 @@
 		border-color: red;
 		border-radius: 10px;
 		font-size: 1em;
+		margin-left: 25px;
 	}
 	button:hover {
 		cursor: pointer;

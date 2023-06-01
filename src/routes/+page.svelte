@@ -1,4 +1,5 @@
 <script>
+	import Download from '../components/Download.svelte';
 	import Generate from '../components/Generate.svelte';
 	import Input from '../components/Input.svelte';
 	import Footer from '../components/layout/Footer.svelte';
@@ -6,9 +7,10 @@
 </script>
 
 <Header />
-<section class="content" id="main">
+<section class="content" id="container">
 	<Input />
 	<Generate />
+	<Download />
 </section>
 <Footer />
 
@@ -20,7 +22,7 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		gap: 50px;
-		margin-top: 120px;
+		gap: 15px;
+		margin-top: 5%;
 	}
 </style>
