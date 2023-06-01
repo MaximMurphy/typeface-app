@@ -1,6 +1,23 @@
 <script>
+	// @ts-nocheck
+
+	import html2canvas from 'html2canvas';
+
 	let handleClick = () => {
 		console.log('hello');
+
+		const element = document.querySelector('#everything');
+		const scale = 2; // Increase scale value for higher quality
+
+		setTimeout(() => {
+			html2canvas(element, { scale }).then((canvas) => {
+				const dataURL = canvas.toDataURL('image/png');
+				const link = document.createElement('a');
+				link.href = dataURL;
+				link.download = 'screenshot.png';
+				link.click();
+			});
+		}, 500);
 	};
 </script>
 
@@ -14,19 +31,13 @@
 		height: fit-content;
 		padding: 15px;
 		border: solid;
-		border-color: whitesmoke;
+		border-color: red;
 		border-radius: 10px;
 		font-size: 1em;
 	}
 	button:hover {
 		cursor: pointer;
-		opacity: 70%;
-	}
-	/* For desktop: */
-	@media only screen and (min-width: 768px) {
-		button {
-			width: 10%;
-			font-size: 1em;
-		}
+		background-color: whitesmoke;
+		color: red;
 	}
 </style>

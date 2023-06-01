@@ -1,4 +1,4 @@
-<div class="footer"><p>made by maxim murphy and joey warnkin</p></div>
+<div class="footer"><p>created by maxim murphy and joey warnkin</p></div>
 
 <style>
 	.footer {

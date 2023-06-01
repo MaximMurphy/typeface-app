@@ -6,7 +6,7 @@
 </script>
 
 <Header />
-<section class="content">
+<section class="content" id="main">
 	<Input />
 	<Generate />
 </section>
@@ -14,19 +14,13 @@
 
 <style>
 	.content {
-		height: 80vh;
+		width: fit-content;
+		height: fit-content;
+		padding: 50px;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
-		justify-content: center;
-		gap: 30px;
-		width: 100%;
-	}
-	/* For desktop: */
-	@media only screen and (min-width: 768px) {
-		.content {
-			height: 90vh;
-			gap: 30px;
-		}
+		gap: 50px;
+		margin-top: 120px;
 	}
 </style>
