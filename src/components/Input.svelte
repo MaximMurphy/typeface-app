@@ -25,7 +25,6 @@
 		width: 300px;
 		height: 300px;
 		font-size: 4.5em;
-		border: solid 2px blue;
 	}
 	form {
 		display: flex;
