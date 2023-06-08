@@ -19,12 +19,13 @@
 		display: none;
 		margin-left: auto;
 		margin-right: auto;
-		width: 500px;
-		height: 500px;
 		flex-direction: column;
 		font-weight: bold;
 		text-align: center;
-		font-size: 7em;
+		width: 300px;
+		height: 300px;
+		font-size: 4.5em;
+		border: solid 2px blue;
 	}
 	form {
 		display: flex;
@@ -48,6 +49,11 @@
 		input {
 			width: 100%;
 			font-size: 2em;
+		}
+		#text {
+			width: 500px;
+			height: 500px;
+			font-size: 7em;
 		}
 	}
 	input:focus {

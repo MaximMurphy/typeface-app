@@ -9,8 +9,10 @@
 <Header />
 <section class="content" id="container">
 	<Input />
-	<Generate />
-	<Download />
+	<div class="btns">
+		<Generate />
+		<Download />
+	</div>
 </section>
 <Footer />
 
@@ -18,11 +20,27 @@
 	.content {
 		width: fit-content;
 		height: fit-content;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		padding: 50px;
+		gap: 15px;
+		margin-top: 7%;
+	}
+	.btns {
 		display: flex;
 		flex-direction: row;
-		align-items: center;
-		gap: 15px;
-		margin-top: 5%;
+		gap: 30px;
+	}
+	/* For desktop: */
+	@media only screen and (min-width: 768px) {
+		.content {
+			flex-direction: row;
+			margin-top: 5%;
+		}
+		.btns {
+			gap: 15px;
+		}
 	}
 </style>
